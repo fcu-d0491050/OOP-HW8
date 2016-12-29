@@ -2,9 +2,9 @@ package fcu.iecs.oop.pokemon;
 
 public class Bulbasaur extends Pokemon
 {
-	public Bulbasaur(String name,PokemonType type,int cp)
+	public Bulbasaur(String nickname,PokemonType type,int cp)
 	{
-		super (name,type,cp);
+		super (nickname,type,cp);
 	}
 	
 	public void attack()

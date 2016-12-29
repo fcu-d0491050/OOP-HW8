@@ -1,17 +1,27 @@
 package fcu.iecs.oop.pokemon;
 
-public abstract class Pokemon
+public class Pokemon
 {
-	private final String name;
+	private String nickname;
 	private final PokemonType type;
 	private int cp;
 	
-	public Pokemon(String name, PokemonType type, int cp)
+	public Pokemon(String nickname, PokemonType type, int cp)
 	{
 		super();
-		this.name = name;
+		this.nickname = nickname;
 		this.type = type;
 		this.cp = cp;
+	}
+	
+	public String getNickname()
+	{
+		return nickname;
+	}
+	
+	public void setNickname(String nickname)
+	{
+		this.nickname = nickname;
 	}
 	
 	public int getCp()
@@ -24,15 +34,14 @@ public abstract class Pokemon
 		this.cp = cp;
 	}
 	
-	public String getName()
-	{
-		return name;
-	}
-	
 	public PokemonType getType()
 	{
 		return type;
 	}
 	
-	public abstract void attack();
+	public void attack()
+	{
+		
+	}
+	
 }
